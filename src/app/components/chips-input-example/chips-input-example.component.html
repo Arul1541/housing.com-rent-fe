@@ -1,0 +1,20 @@
+<mat-form-field class="example-chip-list" style appearance="fill">
+    
+    <mat-chip-list #chipList aria-label="Search-bar">
+      <mat-chip *ngFor="let item of items" (removed)="remove(item)">
+        {{item.name}}
+        <button matChipRemove>
+          <mat-icon>cancel</mat-icon>
+        </button>
+      </mat-chip>
+      <input placeholder="Search..." class="search mt-1"
+             [matChipInputFor]="chipList"
+             [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+             [matChipInputAddOnBlur]="addOnBlur"
+             (matChipInputTokenEnd)="add($event)">
+    </mat-chip-list>
+  </mat-form-field>
+ 
+
+
+  

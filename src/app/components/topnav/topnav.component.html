@@ -1,0 +1,147 @@
+<div class="row">
+    <div class="col-9">
+        <div class="topnav ">
+            <div class="row">
+                <div class="col ">
+                    <a class="float-left logo-image"><img src="../../../assets/housing.png" alt="Housing.com"
+                            decoding="async"></a>
+                    <button class="btn button1 " style="color: white" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Rent In {{place}} <i
+                            class="arrow down"></i></button>
+                </div>
+                <div class="col-sm">
+                    <!-- Search Bar -->
+        
+                    <div class="search"><app-chips-input-example>   </app-chips-input-example></div>
+                    <!-- <input ngx-google-places-autocomplete (onAddressChange)="handleAddressChange($event)" class="search"
+                        placeholder="Search.." /> -->
+                </div>
+                <div class="col-sm d-flex justify-content-end" >
+                    <a href="https://housing.com/apps?utm_source=inhouse-housing&utm_medium=desktop&utm_campaign=tophook"
+                        class="float-right">Downloads App</a>
+                    <a href="saved" class="float-right">Saved</a>
+                    <a href="#" class="float-right">Logout</a>
+                    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-cotrols="offcanvasRight">LOGOUT</button> -->
+                    
+                    
+        
+                </div>
+            </div>
+        </div>
+        
+        
+                <div class="bottomnav">
+                    <div class="clearfix">
+                        <div class="dropdown ">
+                            <mat-form-field appearance="fill">
+                                <mat-label>BHK</mat-label>
+        
+                                <mat-select  panelClass="my-select-panel-class" [formControl]="bhk" multiple name="bhk_type"
+                                    (selectionChange)="bhkChangeAction(bhk_type)" [(ngModel)]="bhk_type">
+                                    <mat-option *ngFor="let bhk of bhkList" [value]="bhk">{{bhk}}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                ₹0-₹2.00L
+                            </button>
+                            <ul class="dropdown-menu" style="min-width: 200px;" aria-labelledby="dropdownMenuButton1">
+                                
+                                <mat-slider (change)="slidervalue(slidevalue)"
+                                thumbLabel
+                                [displayWith]="formatLabel"
+                                tickInterval="1000"
+                                step="10000"
+                                min="0"
+                                max="200000"
+                                [(ngModel)]="slidevalue"
+                                aria-label="units"></mat-slider>
+                                <label class="example-value-label">₹{{slidevalue}}</label>
+                            </ul>
+                            
+                            <mat-form-field appearance="fill">
+                                <mat-label>Listed By</mat-label>
+                                <mat-select [formControl]="list" multiple name="list_type"
+                                    (selectionChange)="listChangeAction(list_type)" [(ngModel)]="list_type">
+                                    <mat-option *ngFor="let list of listedList" [value]="list">{{list}}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                           
+                            <mat-form-field appearance="fill">
+                                <mat-label>Furnishing</mat-label>
+                                <mat-select [formControl]="furnish" multiple name="furnish_type"
+                                    (selectionChange)="furnishChangeAction(furnish_type)" [(ngModel)]="furnish_type">
+                                    <mat-option *ngFor="let furnish of furishList" [value]="furnish">{{furnish}}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            
+                            <mat-form-field appearance="fill">
+                                <mat-label>Property Type</mat-label>
+                                <mat-select [formControl]="property" multiple name="property_type"
+                                    (selectionChange)="propertyChangeAction(property_type)" [(ngModel)]="property_type">
+                                    <mat-option *ngFor="let property of propertyList" [value]="property">{{property}}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <a><img src="//c.housingcdn.com/demand/s/common/assets/srpSnippet.5f9940f3.svg"
+                                    class="img img1 css-1mpq983" decoding="async"></a>
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+        
+        
+                <!-- offcanvas dropdown section from TOP-->
+                <div>
+        
+        
+                    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasTopLabel" class="offcanvas-title">I'm looking to Rent</h5>
+                            <button type="button" class="btn btn1 btn-outline-secondary">Buy</button>
+                            <button type="button" class="btn btn1 btn-outline-secondary">Rent</button>
+                            <button type="button" class="btn btn1 btn-outline-secondary">PG/Co-Living</button>
+                            <button type="button" class="btn btn1 btn-outline-secondary">Commerials</button>
+                            <button type="button" class="btn btn1 btn-outline-secondary">Flatmate</button>
+                            <h5 id="offcanvasTopLabel" class="offcanvas-title">in {{place}} </h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <button id="close-image"><img src="../../../assets/Bengaluru.png"></button>
+                            <button id="close-image"><img src="../../../assets/Ahmedabad.png"></button>
+                            <button id="close-image"><img src="../../../assets/Chennai.png"></button>
+                            <button id="close-image"><img src="../../../assets/Delhi.png"></button>
+                            <button id="close-image"><img src="../../../assets/Gurgaon.png"></button>
+                            <button id="close-image"><img src="../../../assets/Hyderabad.png"></button>
+                            <button id="close-image"><img src="../../../assets/Kolkata.png"></button>
+                            <button id="close-image"><img src="../../../assets/Mumbai.png"></button>
+                            <button id="close-image"><img src="../../../assets/NaviMumbai.png"></button>
+                            <button id="close-image"><img src="../../../assets/Noida.png"></button>
+                            <button id="close-image"><img src="../../../assets/Pune.png"></button>
+                            <button id="close-image"><img src="../../../assets/Thane.png"></button>
+                            <!-- <div class="css-1dsgm9w float-left">Mumbai</div>
+                            <div class="css-vyr7ec float-left"></div>Banglore -->
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">  
+                        <h5 id="offcanvasRightLabel">LOGut and user details page</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        ...
+                    </div>
+                </div>
+        
+               
+            </div>
+            <div class="col-4"><app-sidenav [filterArray]="sharedArray"></app-sidenav></div>
+            <div class="col-6"><app-maps [filterArray]="sharedArray"></app-maps></div>
+
+</div>

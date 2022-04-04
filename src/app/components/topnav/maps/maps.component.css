@@ -1,0 +1,20 @@
+iframe{ 
+    
+    width: 100rem;
+    margin-top:55px;
+
+}
+.example-sidenav{
+    width:200px;
+    background-color:black;
+}
+.example-container{
+    height:100%;
+}
+
+.full{
+    width:100rem;
+    height:100%;
+    margin-top:55px;
+
+}

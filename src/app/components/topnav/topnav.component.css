@@ -1,0 +1,174 @@
+
+.dropdown-menu {
+    
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  .dropdown-slide{
+    min-width: 200px;
+  }
+
+  .my-select-panel-class {
+    width:20px;
+    max-width:20px;
+    background-color: red;
+    font-size: 10px;
+}
+  
+mat-slider {
+    width: 150px;
+    color: #6006c7;
+    position: absolute;
+  }
+
+
+.topnav {
+    background-color: #5207a7;
+    /* overflow: hidden; */
+    height: 45px;
+    padding: 8px;
+    width: 100rem;
+}
+
+.bottomnav {
+    background-color: rgb(243, 243, 243);
+    /* z-index: 5000; */
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    padding: 4px;
+    display: inline-block;
+    justify-content: center;
+}
+
+.search{
+    max-width: 20rem;
+    max-height: 2.2rem;
+    padding-top:-3px;   
+    padding-right: 150px;
+}
+
+.topnav .image {
+    float: left;
+    width: 10%;
+    padding:0px 0px
+}
+.logo-image{
+    width: 200px;
+    height: 46px;
+    overflow: hidden;
+    margin-top: -10px;
+    margin-left: -15px;
+}
+.button1{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.topnav a:hover {
+    background-color:#6609cf;
+    color: white;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .topnav input[type=text] {
+    
+    float: center;
+    padding: auto;
+    border: none;
+    margin-top: auto;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+
+  .btn1{
+    border-radius: 15px;
+    position: relative;
+    color:#5207a7;
+    outline-color: #5207a7;
+    margin-left: 0px;
+  }
+  .btn2{
+    border-radius: 15px;
+    position: relative;
+    color:grey;
+    outline-color: black;
+    margin-bottom: 7px;
+
+  }
+
+  .arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  
+ 
+ .offcanvas-header{
+  
+    margin-left: 150px;
+    margin-right: 150px;
+    justify-content: space-between;
+}
+ 
+ .offcanvas-body{
+     display: inline-block;
+     padding-bottom: 10px;
+     justify-content: center;
+     margin-left: 50px;
+    margin-right: 50px;
+
+ }
+#close-image img {
+    padding: 0;
+    border: none !important;
+    
+    height: 100px;  
+    width: 80px;
+    
+    
+}
+
+.img1{
+    float: right;
+    height: 40px;
+}
+/* Images for the offcanvas drop down */
+.css-1dsgm9w {
+    object-fit: contain;
+    object-position: center bottom;
+    display: block;
+    width: 50px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0) url("//c.housingcdn.com/demand/s/common/assets/cityIcons.525a4896.png") repeat scroll 0% 0% / cover;
+  }
+  .css-vyr7ec {
+    object-fit: contain;
+    object-position: center bottom;
+    display: block;
+    width: 50px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0) url("//c.housingcdn.com/demand/s/common/assets/cityIcons.525a4896.png") repeat scroll -50px 0px / cover;
+  }
+ 
+  

@@ -1,0 +1,73 @@
+<div class="card " style="width: 28rem;margin-top:55px ;height:4rem">
+
+    <a class="text-muted" style="padding-bottom:4px;"> Home/Bangalore/Flats for Rent in Electronic City</a>
+
+    <p class="card-subtitle mb-2 " style="font-size:15px"><b>Flats for Rent in Electronic City, Bangalore</b></p>
+
+</div>
+<div class="card card2 " style="width: 28rem ;height:auto">
+
+    <p style="font-size:15px"><b>Showing 1 - 20 </b>of 1285 properties</p>
+    <div [ngClass]="{'limitTextHeight': isReadMore}" class="text-muted " style="font-size:12px">Looking for Property in
+        BTM Layout? Housing.com offers 575+ Flats & 76+ Houses. Search from 262+ 2 & 3 BHK properties for sale in BTM
+        Layout. Choose from 28+ New Projects, 198+ Resale Projects and 62+ Owner Properties for sale in BTM Layout.
+        ✓100% Verified Properties.</div>
+    <a (click)="showText()" class="float-right" style="font-size:12px">
+        {{ isReadMore ? 'Read More': 'Read Less' }}
+    </a>
+    <!-- <p class="card-subtitle mb-2  text-muted">Looking for Property in BTM Layout? Housing.com offers 575+ Flats & 76+ Houses. Search from 262+ 2 & 3 BHK properties for sale in BTM Layout. Choose from 28+ New Projects, 198+ Resale Projects and 62+ Owner Properties for sale in BTM Layout. ✓100% Verified Properties.</p> -->
+
+</div>
+<div class="card card2 " style="width: 28rem ;height:30rem">
+
+    <div class="card-body" style="maxHeight: 100%; overflow: auto ;">
+        <mat-card class="example-card">
+            <p class="card-subtitle mb-2 text-muted" style="font-size:15px">LOCALITY INSIGHTS</p>
+            <b style="font-size:17px">BTM Layout</b>
+            <p class="card-subtitle mb-2 text-muted" style="font-size:10px">BTM Layout is a neighbourhood in South
+                Bangalore, Bangalore, Bangalore Urban District, Karnataka, India</p>
+            <iframe mat-card-image title="vimeo-player" src="https://player.vimeo.com/video/676533266?h=b911a3bed4"
+                allow="autoplay; fullscreen; picture-in-picture" width="600" height="200" frameborder="0"
+                allowfullscreen></iframe>
+            <mat-card-content class="text-left">
+                <b>Famous places in BTM Layout :</b>
+                <ul class="a text-muted">
+                    <li>Vega City Mall</li>
+                    <li>Market Square</li>
+                    <li>Market Square Mall</li>
+                </ul>
+
+            </mat-card-content>
+
+        </mat-card>
+
+        <!-- second card -->
+        <div *ngFor="let card of filterArray">
+            <mat-card class="example-card "  >
+
+                <img mat-card-image src={{card.img}} alt="Card image cap">
+                <mat-card-content>
+                    <p>
+                        {{card.description}}
+                    </p>
+                </mat-card-content>
+
+            </mat-card>
+        </div>
+        <div class="card flex-row flex-wrap" *ngFor="let card of filterArray">
+            <div class="card-header border-0">
+                <img style=" width:150px" height="200px" src={{card.img}} alt="">
+            </div>
+            <div class="card-block px-2">
+                <h4 class="card-title">Title</h4>
+                <p class="card-text">Description</p>
+                
+            </div>
+            <div class="w-100"></div>
+            <div class="card-footer w-100 text-muted">
+                FOOTER
+            </div>
+        </div>
+    </div>
+    
+</div>

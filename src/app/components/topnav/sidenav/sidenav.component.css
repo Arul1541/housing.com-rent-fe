@@ -1,0 +1,44 @@
+.example-sidenav{
+    width:200px;
+    background-color:black;
+}
+.example-container{
+    height:100%;
+}
+
+.card{
+    min-width: 520px;
+}
+
+.card-title{
+    background-color: white;
+}
+.card2{
+    background-color: rgb(236, 234, 234)
+}
+.limitTextHeight {
+    height: 20px;
+    overflow: hidden;
+}   
+a{
+    color: blue
+}
+.example-card {
+    max-width: 400px;
+    background-color: rgb(231, 230, 230);
+    
+  }
+  
+  ul {
+    list-style: none;
+    
+  }
+
+  ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
